@@ -1,0 +1,16 @@
+.grid-container {
+    display: grid;
+    grid-column-gap: 40px;
+    padding: 10px;
+}
+.grid-item {
+    /* background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(10, 2, 2, 0.8); */
+    /* padding: 20px;
+    font-size: 30px;
+    text-align: center; */
+} 
+/* .seatContainer{
+    display: grid;
+
+} */
