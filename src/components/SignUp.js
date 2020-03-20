@@ -75,7 +75,8 @@ class SignUp extends Component {
                                     </div>
                                 </div>
                                 <div className="row mt-2">
-                                    <div className="col-12 text-center">
+                                    <div className="col-3"></div>
+                                    <div className="col-6 text-center">
                                         <input type="submit" onClick={this.signin} className="btn btn-success form-control" value="Login" />
                                     </div>
                                 </div>
@@ -93,4 +94,4 @@ class SignUp extends Component {
     }
 }
 
-export default SignUp
+export default SignUp;
