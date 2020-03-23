@@ -1,0 +1,9 @@
+[
+    {
+        "id":"100",
+        "name": "MK2 François Mitterand",
+        "time":"11.00am",
+        "reservedSeats":"[]",
+        "seats":["a1","a2","a3"]
+    }
+]

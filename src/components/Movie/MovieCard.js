@@ -8,11 +8,11 @@ const MovieCard = (props) =>
             <div className="noFlex text-decoration-none text-dark card">
                 <img className="card-img-top" src={props.movie.imageUrl} alt="not found" />
                 <div className="card-body">
-                    <Link to={sessionStorage.getItem("isSignedIn")==1 ? `/theater/${props.movie.id}` : `/signup`} className="text-decoration-none text-dark">
+                    {/* <Link to={sessionStorage.getItem("isSignedIn")==1 ? `/theater/${props.movie.id}` : `/signup`} className="text-decoration-none text-dark"> */}
                         <h4 className="card-title">{props.movie.title}</h4>
                         <h6 className="card-subtitle mb-2 text-muted">{props.movie.subtitle}</h6>
                         <p className="text-justify" style={{fontSize: '14px'}}>{props.movie.description}</p>
-                    </Link>
+                    {/* </Link> */}
                 </div>
                 <div className="card-footer">
                     <div className="clearfix">
