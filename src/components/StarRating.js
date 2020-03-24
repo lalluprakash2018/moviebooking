@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const width = 110;
-
 const styles = {
     starsInner: {
         width: `${width}px`
@@ -24,9 +23,7 @@ const cropWidth = (rating) => {
 };
 
 const StarRating = (props) => {
-
     const containerStyle = { width: `${cropWidth(props.rating)}px` };
-
     return (
         <div>
             <div style={styles.starsOuter}>

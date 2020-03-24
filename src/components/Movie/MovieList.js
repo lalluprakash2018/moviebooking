@@ -4,7 +4,7 @@ import MovieCard from './MovieCard';
 
 const getMovies = (movies) => {
     return (
-        <div className="card-deck wrap">
+        <div className="card-deck wrap paddingClass">
             {
                 movies.map(movie => <MovieCard key={movie.id} movie={movie} />)
             }

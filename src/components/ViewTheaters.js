@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-//import TheaterService from '../services/TheaterService';
 import TheaterService from '../services/theaters.json';
 import { Link } from 'react-router-dom';
 
@@ -11,9 +10,7 @@ class ViewTheaters extends Component {
              theaters : TheaterService
         }
     }
-    // componentDidMount(){
-    //     this.setState(()=>({theaters:TheaterService.getTheaters()}));
-    // }
+    
     render() {
         console.log(this.state.theaters);
         return (

@@ -9,12 +9,14 @@ class SeatLayout extends Component {
             theater:{}
         }
     }
+
     componentDidMount(){
         TheaterService.map((item)=>
             (item.name === this.props.match.params.name) ?
                 this.setState({theater:item}) : {}
         );
     }
+    
     render() {
         return (
             <div>

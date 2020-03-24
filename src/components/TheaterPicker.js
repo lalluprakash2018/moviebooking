@@ -29,33 +29,6 @@ class TheaterPicker extends Component {
         return (
             <div className="container">
                 <TheaterList theater={this.state.theaters}/>
-                {/* {for (let index = 0; index < this.state.theaters.length; index++) {
-                    const element = array[index];
-                    {element}
-                    
-                }} */}
-                {/* <div className="row mt-4"> */}
-                    {/* <div className="col-4 text-secondary py-2">
-                        <strong>{this.state.theaters.name}</strong>
-                    </div> */}
-                    
-                    {/* <div className="col-auto">
-                        <div className="border border-success text-center p-2 rounded">9:00 am</div>
-                    </div>
-                    <div className="col-auto">
-                        <div className="border border-success text-center p-2 rounded">12:00 am</div>
-                    </div>
-                    <div className="col-auto">
-                        <div className="border border-success text-center p-2 rounded">4:00 am</div>
-                    </div>
-                    <div className="col-auto">
-                        <div className="border border-success text-center p-2 rounded">9:00 am</div>
-                    </div>
-                    <div className="col-auto">
-                        <div className="border border-success text-center p-2 rounded">9:00 am</div>
-                    </div> */}
-                {/* </div> */}
-
             </div>
         )
     }

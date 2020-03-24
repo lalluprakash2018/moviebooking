@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import Header from './Header';
 import users from '../services/login.json';
+
 class SignUp extends Component {
     constructor(props){
         super(props);
@@ -14,9 +15,11 @@ class SignUp extends Component {
             error:0
         };
     }
+
     handleChange(e){
         this.setState({ [e.target.name]: e.target.value });
     }
+
     signin(e){
         e.preventDefault();
         users.map((item) =>{
@@ -49,6 +52,7 @@ class SignUp extends Component {
 
         }
     }
+
     render() {
         return (
             <div>
@@ -59,7 +63,7 @@ class SignUp extends Component {
                             <h3 className="text-center">Login</h3>
                             <form>
                                 <div className="row mt-4">
-                                    <div className="col-3 text-justify">
+                                    <div className="col-6 text-justify">
                                         Email
                                     </div>
                                     <div className="col-6">
@@ -67,7 +71,7 @@ class SignUp extends Component {
                                     </div>
                                 </div>
                                 <div className="row mt-2">
-                                    <div className="col-3 text-justify">
+                                    <div className="col-6 text-justify">
                                         Password
                                     </div>
                                     <div className="col-6">
@@ -75,17 +79,15 @@ class SignUp extends Component {
                                     </div>
                                 </div>
                                 <div className="row mt-2">
-                                    <div className="col-12 text-center">
+                                    <div className="col-6">
+                                        <Link to="/Register" className="btn btn-light btn-sm">Create an account</Link>
+                                    </div>
+                                    <div className="col-6 text-center">
                                         <input type="submit" onClick={this.signin} className="btn btn-success form-control" value="Login" />
                                     </div>
                                 </div>
                             </form>
-                            <Link to="/Register" className="btn btn-light btn-sm">Create an account</Link>
-                            <div></div>
                         </div>
-                    </div>
-                    <div>
-                        {this.state.email}{this.state.password}
                     </div>
                 </div>
             </div>
@@ -93,4 +95,4 @@ class SignUp extends Component {
     }
 }
 
-export default SignUp
+export default SignUp;

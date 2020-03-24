@@ -21,7 +21,6 @@ class Theaters extends Component {
         });
     }
     render() {
-        
         return (
             <div>
                 <Header />
@@ -34,4 +33,4 @@ class Theaters extends Component {
     }
 }
 
-export default Theaters
+export default Theaters;

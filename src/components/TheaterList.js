@@ -16,4 +16,4 @@ class TheaterList extends Component {
     }
 }
 
-export default TheaterList
+export default TheaterList;

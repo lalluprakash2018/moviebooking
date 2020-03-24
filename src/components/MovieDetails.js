@@ -5,18 +5,9 @@ import faker from 'faker';
 const MovieDetails =(props) =>{
     return(
         <div>
-            {/* <div class="card mb-3">
-                <img src={`../${props.movie.imageUrl}`} className="card-img-top"/>
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-            </div> */}
-
             <div className="bg-dark text-light">
                 <div className="imageContainer">
-                    <img src={`../${props.movie.imageUrl}`} width="100%" height="50%"/>
+                    <img src={`../${props.movie.imageUrl}`} width="100%" style={{height:'350px'}}/>
                 </div>
                 <div className="row mt-2">
                     <div className="col-6">
@@ -53,6 +44,7 @@ const MovieDetails =(props) =>{
         </div>
     )
 }
+
 MovieDetails.defaultProps = {
     movie: {}
 };

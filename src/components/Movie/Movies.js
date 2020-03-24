@@ -2,11 +2,9 @@ import React, { Component } from 'react';
 import MovieList from './MovieList';
 import MovieService from '../../services/MovieService';
 
-export default class Movies extends Component {
-
+class Movies extends Component {
     constructor() {
         super();
-
         this.state = {
             movies: []
         };
@@ -28,3 +26,5 @@ export default class Movies extends Component {
         );
     }
 }
+
+export default Movies;

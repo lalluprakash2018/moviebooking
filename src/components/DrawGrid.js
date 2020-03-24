@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import '../DrawLayout.css';
 
 export class DrawGrid extends Component {
     onClickSeat(seat) {
@@ -14,11 +13,12 @@ export class DrawGrid extends Component {
                             className={this.props.reserved.indexOf(row) > -1? 'reserved': 'available'}
                             key={row} 
                             onClick = {e => this.onClickSeat(row)}>{row}
-                        </div>) }
+                        </div>) 
+                    }
                 </div>
             </div>
         )
     }
 }
 
-export default DrawGrid
+export default DrawGrid;

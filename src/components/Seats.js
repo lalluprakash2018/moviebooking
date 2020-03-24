@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Header from './Header';
 import '../Seats.css';
 import DrawLayout from './DrawLayout';
-// import Screen from './layout/Screen';
 import Theatres from '../services/TheaterService';
 import SeatArray from '../services/seats.json'
 
@@ -54,11 +53,13 @@ export default class Seats extends Component {
             }
         });
     }
+
     handleCheck(){
         this.setState({
             checked:!this.state.checked
         });
     }
+
     handleChange(e){
         this.setState({ [e.target.name]: e.target.value })
     }
@@ -141,13 +142,6 @@ export default class Seats extends Component {
                                             onClickData = { this.onClickData.bind(this) }
                                             row = {this.state.theater.row}
                                         />
-                                        {/* <DrawGrid 
-                                            seat = { this.state.seat }
-                                            available = { this.state.seatAvailable }
-                                            reserved = { this.state.seatReserved }
-                                            onClickData = { this.onClickData.bind(this) }
-                                        />*/}
-                                        {/* <Screen />  */}
                                     </div>
                                 </div>
                             </div>

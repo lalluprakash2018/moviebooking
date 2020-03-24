@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import TimeCard from './TimeCard';
 import { Link } from 'react-router-dom';
 
-export default class TheaterCard extends Component {
+class TheaterCard extends Component {
     constructor(props) {
         super(props)
     
@@ -24,3 +24,5 @@ export default class TheaterCard extends Component {
         )
     }
 }
+
+export default TheaterCard;

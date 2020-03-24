@@ -18,7 +18,6 @@ class DrawLayout extends Component {
         return (
             <div className="grid-container" style={{gridTemplateColumns: `auto ${this.props.middle ? "auto" : ''} auto`}}>
                 <div style={{width:`${this.props.left * 51 }px`}} className="grid-item">
-                    
                     <DrawGrid 
                         seat = { this.state.seat.slice(start,end) }
                         available = { this.state.available }

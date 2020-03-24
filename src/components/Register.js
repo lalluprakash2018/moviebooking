@@ -1,7 +1,6 @@
 import React, { Component} from 'react';
-// import DatePicker from "react-datepicker";
- 
-// import "react-datepicker/dist/react-datepicker.css";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 class Register extends Component{
     constructor(props) {
@@ -22,8 +21,9 @@ class Register extends Component{
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-       // this.handleChangeDatePicker = this.handleChangeDatePicker.bind(this);
+        this.handleChangeDatePicker = this.handleChangeDatePicker.bind(this);
     }
+
     handleChange(event){
         const { name, value } = event.target;
         const validEmailRegex = RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
@@ -45,11 +45,12 @@ class Register extends Component{
             [event.target.name]:event.target.value
         });
     }
-    // handleChangeDatePicker = date => {
-    //     this.setState({
-    //       dob: date
-    //     });
-    //   };
+
+    handleChangeDatePicker = date => {
+        this.setState({
+          dob: date
+        });
+    };
 
     handleSubmit(event) {
         event.preventDefault();
@@ -59,7 +60,8 @@ class Register extends Component{
         } else {
             alert("Done");
         }
-      }
+    }
+
     render(){
         return(
             <div class="container">
@@ -80,12 +82,12 @@ class Register extends Component{
                                     <label>Date of Birth:</label>
                                 </div>
                                 <div class="col-6">
-                                    {/* <DatePicker
+                                    <DatePicker
                                         selected={this.state.dob}
                                         onChange={this.handleChangeDatePicker}
                                         dateFormat="dd/MM/yyyy"
                                         className="form-control"
-                                    /> */}
+                                    />
                                 </div>
                             </div>
                             <div class="row mt-2">
@@ -132,4 +134,5 @@ class Register extends Component{
         )
     }
 }
+
 export default Register;

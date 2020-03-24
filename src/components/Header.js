@@ -10,22 +10,22 @@ class Header extends Component {
              isShowing:sessionStorage.getItem("isSignedIn")
         };
     }
+
     componentDidMount(){
-        if(sessionStorage.getItem("isSignedIn") == null || sessionStorage.getItem("user") == null){
+        if(sessionStorage.getItem("isSignedIn") === null || sessionStorage.getItem("user") === null){
             sessionStorage.setItem('isSignedIn', 0);
             sessionStorage.setItem('user', '');
         }
         this.setState({isShowing:sessionStorage.getItem("isSignedIn")})
     }
+
     Logout(){
         sessionStorage.setItem('isSignedIn', 0);
         sessionStorage.setItem('user', '');
         window.open("http://localhost:3000","_self");
     }
+
     render() {
-        
-        console.log("username"+sessionStorage.getItem("user"));
-        console.log("isShowing"+this.state.isShowing);
         return (
             <div style={BoxStyle}>
                 <nav className="header navbar navbar-dark bg-dark">
@@ -51,4 +51,4 @@ const BoxStyle={
     
 }
 
-export default Header
+export default Header;
