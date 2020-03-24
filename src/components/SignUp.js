@@ -24,7 +24,6 @@ class SignUp extends Component {
         e.preventDefault();
         users.map((item) =>{
             if(item.username === this.state.email && item.password === this.state.password){
-                debugger
                 sessionStorage.setItem('isSignedIn', 1);
                 sessionStorage.setItem('user', this.state.email);
                 window.open("http://localhost:3000","_self");
